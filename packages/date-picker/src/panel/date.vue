@@ -96,7 +96,9 @@
               :value="value"
               :default-value="defaultValue ? new Date(defaultValue) : null"
               :date="date"
-              :disabled-date="disabledDate">
+              :disabled-date="disabledDate"
+              :selected-date="selectedDate"
+              :showWeekNumber="showWeekNumber">
             </date-table>
             <year-table
               v-show="currentView === 'year'"

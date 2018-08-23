@@ -119,7 +119,8 @@
               :disabled-date="disabledDate"
               @changerange="handleChangeRange"
               :first-day-of-week="firstDayOfWeek"
-              @pick="handleRangePick">
+              @pick="handleRangePick"
+              :showWeekNumber="showWeekNumber">
             </date-table>
           </div>
           <div class="el-picker-panel__content el-date-range-picker__content is-right">
@@ -158,7 +159,8 @@
               :disabled-date="disabledDate"
               @changerange="handleChangeRange"
               :first-day-of-week="firstDayOfWeek"
-              @pick="handleRangePick">
+              @pick="handleRangePick"
+              :showWeekNumber="showWeekNumber">
             </date-table>
           </div>
         </div>
@@ -330,7 +332,8 @@
         maxTimePickerVisible: false,
         format: '',
         arrowControl: false,
-        unlinkPanels: false
+        unlinkPanels: false,
+        showWeekNumber: true
       };
     },
 

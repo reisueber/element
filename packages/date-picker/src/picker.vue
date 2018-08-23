@@ -382,7 +382,8 @@ export default {
       default: '-'
     },
     pickerOptions: {},
-    unlinkPanels: Boolean
+    unlinkPanels: Boolean,
+    showWeekNumber: Boolean
   },
 
   components: { ElInput },
@@ -822,6 +823,7 @@ export default {
       this.picker.showTime = this.type === 'datetime' || this.type === 'datetimerange';
       this.picker.selectionMode = this.selectionMode;
       this.picker.unlinkPanels = this.unlinkPanels;
+      this.picker.showWeekNumber = this.showWeekNumber;
       this.picker.arrowControl = this.arrowControl || this.timeArrowControl || false;
       this.$watch('format', (format) => {
         this.picker.format = format;

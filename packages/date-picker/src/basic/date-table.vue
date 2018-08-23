@@ -147,9 +147,7 @@
           const row = rows[i];
 
           if (this.showWeekNumber) {
-            if (!row[0]) {
-              row[0] = { type: 'week', text: getWeekNumber(nextDate(startDate, i * 7 + 1)) };
-            }
+            row[0] = { type: 'week', text: getWeekNumber(nextDate(startDate, i * 7 + 1)) };
           }
 
           for (let j = 0; j < 7; j++) {
